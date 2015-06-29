@@ -1,0 +1,199 @@
+body
+{
+  background: #ccc url(../img/bg.png);
+  font-family: Verdana;
+}
+
+.main-content
+{
+  margin-top: 20px;
+}
+
+span.error
+{
+    background-color: transparent;
+    color :#c60f13;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+small.error
+{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+.panel img
+{
+    height: 300px;
+}
+
+.main-pic
+{
+    
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.eventtitle
+{
+    color:#2ba6cb;
+}
+
+#foot
+{
+    margin-top: 20px;
+}
+
+       .hero {
+  background: url("http://wallpoper.com/images/00/34/39/15/circuit-pcb_00343915.jpg") no-repeat center center;
+  background-size: cover;
+
+ }
+
+  .hero h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    font-weight: 300;
+    text-align: center; 
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);}
+
+    hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .8; }
+
+  .hero p {
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+     }
+  .hero .tech-img {
+    background: url("../img/sitemap-2.jpg") no-repeat center center;
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; }
+  @media only screen and (min-width: 40.063em) {
+    .hero .tech-img {
+      height: 18rem;
+      width: 18rem; }
+    .hero h1 {
+      padding-top: 4.5rem;
+      text-align: right;
+      font-size: 2.5rem; }
+    .hero p {
+      text-align: right; } }
+
+
+/* .listblock input {
+  padding: 147px 155px 17px 18px;
+  display: inline-block;
+}
+
+.listblock ul li a:hover {
+    background: transparent url('../img/basket.png') no-repeat 3px 170px;
+} */
+
+
+.listblock input[type=checkbox] {
+    /* display: block; */
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-appearance: none;
+    outline: 0;
+    margin-right: 6px;
+    margin-left: 8px;
+}
+
+.listblock input[type=checkbox]:checked {
+    opacity: 0.5;
+}
+.listblock input[type=checkbox]:not(:checked) {
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"> <path id="checkbox-9-icon" d="M391,121v270H121V121H391z M431,81H81v350h350V81z"></path> </svg>');
+}
+
+.listblock input[type=checkbox]:hover {
+    cursor:pointer;
+}
+
+
+#hit
+{
+    margin-bottom: 30px;
+}
+
+
+.large-10, .large-12
+{
+  background: white;
+}
+
+h1, h3, .top-bar-section ul li > a
+{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.slick-slide{
+
+}
+
+body .slick-dots li button:before  {
+  font-size: 35px;
+}
+
+.panel h3
+{
+  color: #2ba6cb;
+}
+
+ 
+.share-buttons img {
+height: 40px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+margin-top: 20px;
+}
+
+.small-pic
+{
+  width: 70px;
+}
+
+.container-small-pic
+{
+  display: inline-block;
+  padding-left: 60px;
+    padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.corps
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image
+{
+
+}

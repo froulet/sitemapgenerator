@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SiteMap Generator</title>
+
+    <script type="text/javascript" src="/App/Ui/scripts/jquery-1.11.2.min.js"></script>
+    <link rel="shortcut icon" href="/App/Ui/img/favicon.ico">
+
+
+     <!-- Importation du JS -->
+    <script src="/App/Ui/foundation/js/vendor/modernizr.js"></script>
+    <script src="/App/Ui/foundation/js/foundation.min.js"></script>
+
+    <script src="/App/Ui/foundation/js/foundation/foundation.topbar.js"></script>
+
+    <!-- Importation des polices et de Foundation -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' >
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" >
+    <link rel="stylesheet" href="/App/Ui/foundation/css/foundation.css" >
+    <link rel="stylesheet" href="/App/Ui/css/style.css" >
+
+</head>
+
+<body>
+<a id="top"></a>
+<section class="hero">
+  <div class="row intro">
+    <div class="small-centered medium-uncentered medium-6 large-7 columns">
+      <h1>SiteMap Generator</h1>
+      <p>Generate a SiteMap from all the files on your server.</p>
+    </div>
+    <div class="small-centered medium-uncentered medium-6 large-5 columns">
+      <div class="tech-img"></div>
+    </div>
+  </div>
+</section>
+
+<div class="sticky">
+<nav class="top-bar" role="navigation" data-topbar data-options="dropdown_autoclose: false">
+  <ul class="title-area">
+    <li class="name">
+      <!--<h1><a href="#">My Site</a></h1>-->
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+   <ul class="right">
+
+</ul> 
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+
+    </ul>
+  </section>
+</nav>
+</div>
+
+  <div class="container flex">
+    <a href="#nomenu" id="overlay"></a>
+    <div class="main-content">
+        <div class="swipe-area"></div>
+          <a href="#lemenu" data-toggle=".container" id="lemenu-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </a>
+
+          <div class="small-6 large-centered columns"><?php echo $html; ?></div>
+                
+      </div>
+
+        <footer class='row' id='foot'>
+        <div class="large-12 columns">
+        &#169; <a href="http://frantzroulet.com" target="_blank">Frantz Roulet</a>&#160; &#160; <a href="#top">Back to top</a>
+        </div>
+        </footer>
+
+   </div>
+
+  <script>
+    //On réinitialise les fonctions foundations (le menu)
+    $(document).foundation('topbar', 'reflow');
+
+    $(document).ready(function(){
+
+    /////// SMOOTH SCROLL ///////
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+          }
+        }
+      });
+    });
+
+
+    });
+    
+  </script>
+
+</body>
+</html>
